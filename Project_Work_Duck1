@@ -1,0 +1,115 @@
+
+mkdir lab0
+cd lab0
+	touch amoonguss3
+	echo 'Живет  Cave Forest Grassland' >> amoonguss3
+	chmod u-rw,o+w amoonguss3
+	mkdir bisharp3
+	cd bisharp3
+		mkdir swoobat vanilluxe garchomp drapion umbreon
+		chmod 551 swoobat
+		chmod u=rwx,g=wx,o=rw vanilluxe
+		chmod u=wx,g=wx,o=rx garchomp
+		chmod 361 drapion
+		chmod 511 umbreon
+		touch huntail
+		echo 'satk=9 sdef=8 \nspd=5' >> huntail
+		chmod u-w,g-r,o-r huntail
+		cd ..
+	chmod u=wx,g=x,o=w bisharp3
+	mkdir lillipup3
+	cd lillipup3
+		mkdir sneasel
+		chmod 571 sneasel
+		touch chikorita
+		echo 'Ходы  Ancientpower Bullet Seed Double-Edge Fury' >> chikorita
+		echo 'Cutter Giga Drain Grass Pledge Iron Tail Magic Coat Mud-Slap Role Play' >> chikorita
+		echo 'Secret Power Seed Bomb Sleep Talk Snore Synthesis Worry \nSeed' >> chikorita
+		chmod 666 chikorita
+		touch hoothoot
+		echo 'Способности  Last Chance Mach Speed Insomnia Keen \nEye' >> hoothoot
+		chmod 4 hoothoot
+		cd ..
+	chmod u=rwx,g=rx,o=wx lillipup3
+	touch lucario0
+	echo 'Тип диеты  Omnivore' >> lucario0
+	chmod u-w,g-r,o-r lucario0
+	mkdir scyther5
+	cd scyther5
+		touch whismur
+		echo 'Тип диеты \nHerbivore' >> whismur
+		chmod 620 whismur
+		touch bisharp
+		echo 'weight=154.3 height=63.0 atk=13 def=10' >> bisharp
+		chmod 620 bisharp
+		mkdir flygon
+		chmod 357 flygon
+		touch munna 
+		echo 'Живет \nForest' >> munna
+		chmod u-w,g-r,o-r munna
+		touch skitty 
+		echo 'Способности  Last Chance Cute Charm \nNormalize' >> skitty
+		chmod 440 skitty
+		touch fraxure
+		echo 'Живет  Cave Mountain' >> fraxure
+		chmod u-rw fraxure
+		cd ..
+	chmod u=wx,g=rw,o=x scyther5
+	
+	touch walrein7
+	echo 'satk=10 sdef=9 \nspd=7' >> walrein7
+	chmod 6 walrein7
+
+	chmod u+r amoonguss3
+	cp /home/s333057/lab0/amoonguss3 /home/s333057/lab0/scyther5/flygon
+	chmod u-r amoonguss3
+
+	ln -s /home/s333057/lab0/walrein7 /home/s333057/lab0/scyther5/skittywalrein
+
+	ln -s /home/s333057/lab0/lillipup3 /home/s333057/lab0/Copy_59
+
+	cat /home/s333057/lab0/bisharp3/huntail /home/s333057/lab0/lillipup3/chikorita > /home/s333057/lab0/lucario0_77
+	
+	chmod -R u+r scyther5 && chmod u+w /home/s333057/lab0/lillipup3/sneasel
+	cp -R /home/s333057/lab0/scyther5 /home/s333057/lab0/lillipup3/sneasel
+	chmod u-r scyther5/flygon scyther5/fraxure
+	chmod u-r lillipup3/sneasel/scyther5/flygon lillipup3/sneasel/scyther5/fraxure
+	chmod u-r lillipup3/sneasel/scyther5
+	chmod u-r scyther5 && chmod u-w lillipup3/sneasel
+	ln /home/s333057/lab0/lucario0 /home/s333057/lab0/lillipup3/hoothootlucario
+
+	chmod u+r /home/s333057/lab0/walrein7 && cp /home/s333057/lab0/walrein7 /home/s333057/lab0/lillipup3/hoothootwalrein && chmod u-r walrein7
+	
+	echo '\n№4)\n'
+	echo 'a)'
+	cat /home/s333057/lab0/lillipup3/* | wc -l > /tmp/result
+
+	echo '\nb)'
+	ls -lh /home/s333057/lab0/* 2>/dev/null | grep "^-" | grep "l$" | sort -r -k5
+
+	echo '\nc)'
+	cat /home/s333057/lab0/lillipup3/hoothoot /home/s333057/lab0/scyther5/whismur | grep "y$"
+
+	echo '\nd)'
+	ls -l /home/s333057/lab0/lillipup3/ 2>/dev/null | grep "^-" | sort -r -k9
+
+	echo '\ne)'
+	cat /home/s333057/lab0/walrein7 2>/dev/null | sort -r | cat -n
+
+	echo '\nf)'
+	ls -lh /home/s333057/lab0/* | grep ta | grep s333057 | tail -2 | sort -r -k5
+	echo '\n'
+
+
+	chmod u+w lucario0 && rm lucario0
+
+	chmod u+w /home/s333057/lab0/lillipup3/hoothoot && rm /home/s333057/lab0/lillipup3/hoothoot
+
+	 rm /home/s333057/lab0/Copy_*
+
+	 rm /home/s333057/lab0/*/hoothootlucar*
+
+	 rm -rf /home/s333057/lab0/bisharp3
+
+	 rmdir /home/s333057/lab0/bisharp3/vanilluxe
+	 echo '\n'
